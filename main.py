@@ -4,7 +4,7 @@ from pyA20.gpio import gpio
 from pyA20.gpio import port
 
 mod = ctypes.cdll.LoadLibrary('/root/OneWire/onewire.so')
-wire = mod.new_(11)
+wire = mod.new_(15)
 
 def getTemp(device):
     list = (ctypes.c_uint8 * 9)()
